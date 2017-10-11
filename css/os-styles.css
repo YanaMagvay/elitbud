@@ -18,6 +18,21 @@
   .half-column {
     max-width: 270px; } }
 
+.navbar {
+  margin-bottom: 0px;
+  border-bottom: 0px; }
+
+span.info {
+  display: block;
+  color: #28232d;
+  font-family: "Fira Sans Bold";
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.48px;
+  padding-left: 30px;
+  border-left: 4px solid #A0EC00;
+  margin: 20px 0; }
+
 .header-price {
   width: 100%;
   min-height: 700px;
@@ -80,3 +95,70 @@
       .header-price .right-side .header-info > div {
         flex: 1;
         padding-left: 115px; }
+
+.active-images {
+  width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch; }
+  .active-images .active-item {
+    box-sizing: border-box;
+    cursor: zoom-in;
+    width: 100%;
+    position: relative; }
+    .active-images .active-item .action-icon {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      animation: slide-up-fade-in ease 0.6s;
+      animation-iteration-count: 1;
+      transform-origin: 50% 50%;
+      animation-fill-mode: forwards;
+      -webkit-animation: slide-up-fade-in ease 0.6s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-transform-origin: 50% 50%;
+      -webkit-animation-fill-mode: forwards; }
+    .active-images .active-item:hover .action-icon {
+      display: flex; }
+    .active-images .active-item:hover:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      top: 0;
+      left: 0; }
+
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 40px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px); } }
+
+@-webkit-keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 40px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px); } }
+
+.os-dark {
+  background-color: #28232d;
+  width: 100%; }
+
+.os-grey {
+  background-color: #f1f1f2;
+  width: 100%; }

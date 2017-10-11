@@ -24,6 +24,22 @@
   }
 }
 
+.navbar{
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
+
+span.info{
+  display: block;
+  color: #28232d;
+  font-family: "Fira Sans Bold";
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.48px;
+  padding-left: 30px;
+  border-left: 4px solid #A0EC00;
+  margin: 20px 0;
+}
 
 .header-price {
   width: 100%;
@@ -102,4 +118,94 @@
       }
     }
   }
+}
+
+.active-images{
+  width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
+  //border: 1px solid;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  .active-item{
+    box-sizing: border-box;
+    //border: 1px solid;
+    cursor: zoom-in;
+    width: 100%;
+    position: relative;
+    .action-icon{
+      display: none;
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+      //display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+
+      animation: slide-up-fade-in ease 0.6s;
+      animation-iteration-count: 1;
+      //animation-delay: 0.6s;
+      transform-origin: 50% 50%;
+      animation-fill-mode:forwards;
+      -webkit-animation: slide-up-fade-in ease 0.6s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-transform-origin: 50% 50%;
+      -webkit-animation-fill-mode:forwards;
+      //-webkit-animation-delay: 0.6s;
+    }
+    &:hover{
+      .action-icon{
+        display: flex;
+      }
+      &:before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0,0.3);
+        top:0;
+        left: 0;
+        //z-index: 1;
+      }
+    }
+  }
+}
+
+
+@keyframes slide-up-fade-in{
+  0% {
+    opacity:0;
+    transform:  translate(0px,40px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes slide-up-fade-in {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0px,40px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+.os-dark{
+  background-color: #28232d;
+  width: 100%;
+}
+
+.os-grey{
+  background-color: #f1f1f2;
+  width: 100%;
 }
