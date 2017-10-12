@@ -15,7 +15,7 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('webserver', function() {
-    gulp.src('app')
+    gulp.src('/')
         .pipe(server({
             livereload: true,
             directoryListing: true,
