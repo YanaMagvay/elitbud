@@ -36,14 +36,14 @@ span.info {
 .header-price {
   width: 100%;
   min-height: 700px;
-  display: flex;
-  display: -webkit-flex; }
+  display: grid;
+  grid-template-areas: "a b" "a c" "a d";
+  grid-template-rows: 70px 1fr 1fr;
+  grid-template-columns: 50% 50%; }
   .header-price .left-side {
+    grid-area: a;
     background-image: url("../img/building/bg_build.png");
     background-size: cover;
-    width: 50%;
-    height: 100%;
-    min-height: 700px;
     display: flex;
     display: -webkit-flex;
     justify-content: flex-end;
@@ -63,38 +63,27 @@ span.info {
         color: white; }
       .header-price .left-side .header-price-bloc .transpared {
         background-color: rgba(0, 0, 0, 0.6); }
-  .header-price .right-side {
-    width: 50%;
-    height: 100%;
-    min-height: 700px;
+  .header-price .os-caption {
+    grid-area: b;
+    min-height: 75px;
+    width: 100%;
+    background-color: #28232d;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch; }
-    .header-price .right-side .os-caption {
-      min-height: 75px;
-      width: 100%;
-      background-color: #28232d;
-      display: flex;
-      align-items: center;
-      padding-left: 115px; }
-      .header-price .right-side .os-caption a {
-        color: white;
-        text-decoration: none; }
-    .header-price .right-side .head-contacts {
-      width: 100%;
-      background-color: #f1f1f2;
-      flex: 1; }
-      .header-price .right-side .head-contacts > div {
-        flex: 1;
-        padding-left: 115px; }
-    .header-price .right-side .header-info {
-      width: 100%;
-      flex: 1; }
-      .header-price .right-side .header-info > div {
-        flex: 1;
-        padding-left: 115px; }
+    align-items: center;
+    padding-left: 11%; }
+    .header-price .os-caption a {
+      color: white;
+      text-decoration: none; }
+  .header-price .head-contacts {
+    grid-area: c;
+    width: 100%;
+    background-color: #f1f1f2;
+    padding-left: 11%; }
+  .header-price .header-info {
+    grid-area: d;
+    width: 100%; }
+    .header-price .header-info > div {
+      padding-left: 11%; }
 
 .active-images {
   width: 100%;

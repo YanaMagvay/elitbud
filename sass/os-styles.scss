@@ -41,17 +41,48 @@ span.info{
   margin: 20px 0;
 }
 
+//.grid-root{
+//  min-height: 500px;
+//  width: 100%;
+//  & > *{
+//    border: 1px solid black;
+//  }
+//  display: grid;
+//  grid-template-areas: "a b" "a c" "a d";
+//  grid-template-rows: 70px 1fr 1fr;
+//  grid-template-columns: 50% 50%;
+//  .grid-left{
+//    grid-area: a;
+//  }
+//  .grid-right-top{
+//    grid-area: b;
+//    //height: 70px;
+//  }
+//  .grid-right-center{
+//    grid-area: c;
+//  }
+//  .grid-right-bottom{
+//    grid-area: c;
+//  }
+//}
+
 .header-price {
   width: 100%;
   min-height: 700px;
-  display: flex;
-  display: -webkit-flex;
+  //display: flex;
+  //display: -webkit-flex;
+  display: grid;
+  grid-template-areas: "a b" "a c" "a d";
+  grid-template-rows: 70px 1fr 1fr;
+  grid-template-columns: 50% 50%;
+
   .left-side {
+    grid-area: a;
     background-image: url('../img/building/bg_build.png');
     background-size: cover;
-    width: 50%;
-    height: 100%;
-    min-height: 700px;
+    //width: 50%;
+    //height: 100%;
+    //min-height: 700px;
     display: flex;
     display: -webkit-flex;
     justify-content: flex-end;
@@ -75,49 +106,49 @@ span.info{
       }
     }
   }
-  .right-side {
-    width: 50%;
-    height: 100%;
-    //background-color: red;
-    min-height: 700px;
-    //display: flex;
-    //display: -webkit-flex;
-    //flex-direction: column;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+  //.right-side {
+  //  width: 50%;
+  //  height: 100%;
+  //  //background-color: red;
+  //  min-height: 700px;
+  //  //display: flex;
+  //  //display: -webkit-flex;
+  //  //flex-direction: column;
+  //  display: flex;
+  //  flex-direction: column;
+  //  justify-content: flex-start;
+  //  align-items: stretch;
+  //  align-content: stretch;
     .os-caption {
+      grid-area: b;
       min-height: 75px;
       width: 100%;
       background-color: #28232d;
       display: flex;
       align-items: center;
-      padding-left: 115px;
+      padding-left: 11%;
       a {
         color: white;
         text-decoration: none;
       }
     }
     .head-contacts {
+      grid-area: c;
       width: 100%;
       background-color: #f1f1f2;
-      flex: 1;
-      & > div {
-        flex: 1;
-        padding-left: 115px;
-      }
+      padding-left: 11%;
+      //flex: 1;
     }
     .header-info {
+      grid-area: d;
       width: 100%;
-      flex: 1;
+      //flex: 1;
       & > div {
-        flex: 1;
-        padding-left: 115px;
+        //flex: 1;
+        padding-left: 11%;
       }
     }
-  }
+  //}
 }
 
 .active-images{
