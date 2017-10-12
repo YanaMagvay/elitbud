@@ -52,6 +52,103 @@
 </nav>
 </header>
 <main>
+
+<div class="wrap-carousel">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+          <h3 class="header-frame">Наши Проекты</h3>
+      </div>
+    </div>
+    <div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="4000" id="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="gallery-box">
+                      <img src="img/katalog1.jpg" alt="">
+                      <h4>Chelsea Tower</h4>
+                      <p>Киев, ст м Олимпийская<br> ул. Димитрова, 2</p>
+                      <span>от 19 500 грн/м<sup>2</sup></span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="gallery-box">
+                    <img src="img/katalog2.jpg" alt="">
+                    <h4>Avenue 14-16</h4>
+                    <p>Киев, ст м Дружбы народов б <br>ул. Дружбы Народов, 14-16</p>
+                    <span>от 19 500 грн/м<sup>2</sup></span>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="gallery-box">
+                    <img src="img/katalog3.jpg" alt="">
+                    <h4>Geneva</h4>
+                    <p>Киев, ст м Шулявская  <br>бул. Лепсе, 7 Г</p>
+                    <span>от 22 500 грн/м<sup>2</sup></span>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="gallery-box">
+                    <img src="img/katalog4.jpg" alt="">
+                    <h4>Nobel Homes</h4>
+                    <p>Киев, ст м Университет <br> ул. Гоголевская, 14</p>
+                    <span>от 22 500 грн/м<sup>2</sup></span>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="gallery-box">
+                      <img src="img/katalog1.jpg" alt="">
+                      <h4>Chelsea Tower</h4>
+                      <p>Киев, ст м Олимпийская<br> ул. Димитрова, 2</p>
+                      <span>от 19 500 грн/м<sup>2</sup></span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="gallery-box">
+                    <img src="img/katalog2.jpg" alt="">
+                    <h4>Avenue 14-16</h4>
+                    <p>Киев, ст м Дружбы народов б <br>ул. Дружбы Народов, 14-16</p>
+                    <span>от 19 500 грн/м<sup>2</sup></span>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="gallery-box">
+                    <img src="img/katalog3.jpg" alt="">
+                    <h4>Geneva</h4>
+                    <p>Киев, ст м Шулявская  <br>бул. Лепсе, 7 Г</p>
+                    <span>от 22 500 грн/м<sup>2</sup></span>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="gallery-box">
+                    <img src="img/katalog4.jpg" alt="">
+                    <h4>Nobel Homes</h4>
+                    <p>Киев, ст м Университет <br> ул. Гоголевская, 14</p>
+                    <span>от 22 500 грн/м<sup>2</sup></span>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <a data-slide="prev" href="#carousel" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#carousel" class="right carousel-control">›</a>
+    </div>
+  </div>
+</div>
+
 <div class="container second-section">
 <div class="row">
   <div class="col-xs-12">
@@ -138,7 +235,7 @@
   </div>
 
   <div class="row">
-    <div id="map"></div>
+     <div id="map"></div>
   </div>
 </div>
 </main>
@@ -185,70 +282,46 @@
   </div>
 </footer>
 
-<div class='col-md-12'>
-                            <div class="carousel slide media-carousel" id="media">
-                                <div class="carousel-inner">
-                                    <div class="item  active">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <a class="fancybox thumbnail" rel="gallery1" href="img/frezedetay.png">
-                                                    <img src="http://placehold.it/150x150" alt="">
-                                                </a>
+<script src="http://maps.google.com/maps/api/js?sensor=false"  type="text/javascript"></script>
+<script type="text/javascript">
+    var locations = [
+      ['seven', 50.427883, 30.711762, 7],
+      ['six', 50.498693, 30.667816, 6],
+      ['first', 50.397308, 30.470062, 4],
+      ['sec', 50.511795, 30.316254, 5],
+      ['third', 50.347328, 30.254456, 3],
+      ['fourth', 50.479035, 30.183045, 2],
+      ['fifth',50.464613, 30.538040, 1]
+    ];
 
-                                            </div>
-                                            <div class="col-md-4">
-                                                <a class="fancybox thumbnail" rel="gallery1" href="img/katalog.png">
-                                                    <img src="http://placehold.it/150x150" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <a class="fancybox thumbnail" rel="gallery1" href="img/katalog.png">
-                                                    <img src="http://placehold.it/150x150" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <a class="fancybox thumbnail" rel="gallery1" href="img/katalog.png">
-                                                    <img src="http://placehold.it/150x150" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <a class="fancybox thumbnail" rel="gallery1" href="img/katalog.png">
-                                                    <img src="http://placehold.it/150x150" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <a class="fancybox thumbnail" rel="gallery1" href="img/katalog.png">
-                                                    <img src="http://placehold.it/150x150" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <a class="fancybox thumbnail" href="#">
-                                                    <img alt="" src="http://placehold.it/150x150"></a>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <a class="fancybox thumbnail" href="#">
-                                                    <img alt="" src="http://placehold.it/150x150"></a>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <a class="fancybox thumbnail" href="#">
-                                                    <img alt="" src="http://placehold.it/150x150"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-                                <a data-slide="next" href="#media" class="right carousel-control">›</a>
-                            </div>
-                        </div>
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: new google.maps.LatLng(50.440567, 30.427490),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+    var pinImage = new google.maps.MarkerImage("img/marker.png");
+
+    for (i = 0; i < locations.length; i++) {
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: pinImage
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>
 </body>
 </html>

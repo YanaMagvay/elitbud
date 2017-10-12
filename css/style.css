@@ -223,6 +223,74 @@ footer {
       left: 10px;
       top: 2px; }
 
+.home .wrap-carousel {
+  background: #F1F1F2;
+  padding: 20px 0; }
+  .home .wrap-carousel .item {
+    padding: 0; }
+  .home .wrap-carousel .gallery-box {
+    padding: 0;
+    text-align: center;
+    max-width: 270px;
+    background: #fff;
+    margin: auto; }
+    .home .wrap-carousel .gallery-box:hover {
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.16);
+      cursor: pointer; }
+      .home .wrap-carousel .gallery-box:hover span {
+        background: #5aca00;
+        color: #ffffff; }
+      .home .wrap-carousel .gallery-box:hover p:after {
+        display: none; }
+    .home .wrap-carousel .gallery-box h4 {
+      font-family: "Fira Sans Bold";
+      margin: 30px auto 10px; }
+    .home .wrap-carousel .gallery-box p {
+      color: #221e26;
+      font-size: 13px;
+      line-height: 19px;
+      letter-spacing: -0.26px;
+      margin: 0px 20px 25px;
+      position: relative; }
+      .home .wrap-carousel .gallery-box p:after {
+        content: '';
+        background-image: url(../img/frame-2.png);
+        background-repeat: repeat-x;
+        position: absolute;
+        width: 50%;
+        margin: auto;
+        height: 4px;
+        left: 25%;
+        top: 65px; }
+    .home .wrap-carousel .gallery-box img {
+      width: 100%; }
+    .home .wrap-carousel .gallery-box span {
+      display: block;
+      padding: 30px 5px;
+      font-family: "Fira Sans Bold";
+      font-size: 16px;
+      line-height: 25px; }
+  .home .wrap-carousel .carousel-control {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background: #221E26;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 50%; }
+  .home .wrap-carousel .carousel-control.right {
+    right: -35px; }
+  .home .wrap-carousel .carousel-control.left {
+    left: -35px; }
+
 .home .second-section .upper-letter::first-letter {
   font-size: 25px;
   letter-spacing: -0.5px;
@@ -375,3 +443,25 @@ footer {
 .home .map-section .header-frame:after {
   width: 12%;
   right: 28%; }
+
+.home .map-section #map {
+  border-top: 5px solid #FFA200;
+  width: 100%;
+  height: 485px;
+  text-align: center; }
+
+@media (max-width: 767px) {
+  .active > div {
+    display: none; }
+  .active > div:first-child {
+    display: block; }
+  .carousel-control.right {
+    right: 0px; }
+  .carousel-control.left {
+    left: 0px; }
+  .gallery-box {
+    margin: auto; }
+  .home .wrap-carousel .carousel-control.right {
+    right: 0; }
+  .home .wrap-carousel .carousel-control.left {
+    left: 0; } }

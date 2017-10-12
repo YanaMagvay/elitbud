@@ -281,6 +281,105 @@ footer{
 }
 
 .home{
+  .wrap-carousel{
+    background: #F1F1F2;
+    padding: 20px 0;
+
+    .item{
+      padding: 0;
+    }
+
+     .gallery-box{
+      padding: 0;
+      text-align: center;
+      max-width: 270px;
+      background: #fff;
+      margin: auto;
+      &:hover{
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+
+        span{
+          background: $light-green;
+          color: #ffffff;
+        }
+
+        p{
+          &:after{
+            display: none;
+          }
+        }
+
+      }
+
+        h4{
+          font-family: $fira-sans-bold;
+          margin: 30px auto 10px;
+        }
+
+        p{
+          color: #221e26;
+          font-size: 13px;
+          line-height: 19px;
+          letter-spacing: -0.26px;
+          margin: 0px 20px 25px;
+          position: relative;
+
+          &:after{
+            content: '';
+            background-image: url(../img/frame-2.png);
+            background-repeat: repeat-x;
+            position: absolute;
+
+            width: 50%;
+            margin: auto;
+            height: 4px;
+            left: 25%;
+            top: 65px;
+          }
+        }
+
+        img{
+          width: 100%;
+        }
+
+        span{
+          display: block;
+          padding: 30px 5px;
+          font-family: $fira-sans-bold;
+          font-size: 16px;
+          line-height: 25px;
+
+        }
+    }
+
+    .carousel-control{
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      background: #221E26;
+      opacity: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      top: 50%;
+    }
+
+    .carousel-control.right{
+      right: -35px;
+    }
+    .carousel-control.left{
+      left: -35px;
+    }
+
+  }
+
   .second-section{
     .upper-letter::first-letter{
       font-size: 25px;
@@ -478,6 +577,41 @@ footer{
         right: 28%;
       }
     }
+
+    #map{
+      border-top: 5px solid #FFA200;
+      width: 100%;
+      height: 485px;
+      text-align: center;
+
+    }
   }
 
+}
+
+
+@media (max-width: 767px) {
+	.active > div {
+		display:none;
+	}
+	.active > div:first-child {
+		display:block;
+	}
+
+  .carousel-control.right{
+    right: 0px;
+  }
+  .carousel-control.left{
+    left: 0px;
+  }
+  .gallery-box{
+    margin: auto;
+  }
+  .home .wrap-carousel .carousel-control.right{
+    right: 0;
+  }
+
+  .home .wrap-carousel .carousel-control.left{
+    left: 0
+  }
 }
